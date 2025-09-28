@@ -14,4 +14,14 @@
     }
   },
   "remoteUser": "node"
+  "secrets": {
+  	"FORGE_EMAIL": {
+  		"description": "This is the login email address of the Forge user.",
+  		"documentationUrl": "https://developer.atlassian.com/platform/forge/getting-started/#using-environment-variables-to-login
+  		},
+  	"FORGE_API_TOKEN": {
+  		"description": "This is the user's account API token created at https://id.atlassian.com/manage/api-tokens",
+  		"documentationUrl": https://developer.atlassian.com/platform/forge/getting-started/#log-in-with-an-atlassian-api-token"
+  		}
+  	}
 }
