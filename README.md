@@ -9,15 +9,11 @@ Welcome! This repo is preconfigured with a Dev Container for Atlassian Forge dev
 
 ## Start (2–5 minutes)
 1. Open this repo on GitHub.
-2. Click the green **Code** button → **Create codespace on main**.
+2. Click the green **Code** button → Switch to **Codespaces** tab → Click **three dots "..."** → Select **New with options..***.
 3. When prompted, set Codespaces Secrets:
    - **FORGE_EMAIL** = your Atlassian login email
    - **FORGE_API_TOKEN** = your Atlassian API token
 4. Wait for setup to complete. The container installs the Forge CLI automatically.
-
-Notes:
-- If you don’t see the secrets prompt, you can add them after creation:
-  - In the Codespace: **Codespaces** panel → **Secrets** → Add `FORGE_EMAIL`, `FORGE_API_TOKEN`.
 
 ## Verify and Log In
 In the terminal (already open in your Codespace):
