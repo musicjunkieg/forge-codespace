@@ -13,15 +13,16 @@
       }
     }
   },
-  "remoteUser": "node"
+  "remoteUser": "node",
   "secrets": {
-  	"FORGE_EMAIL": {
-  		"description": "This is the login email address of the Forge user.",
-  		"documentationUrl": "https://developer.atlassian.com/platform/forge/getting-started/#using-environment-variables-to-login
-  		},
-  	"FORGE_API_TOKEN": {
-  		"description": "This is the user's account API token created at https://id.atlassian.com/manage/api-tokens",
-  		"documentationUrl": https://developer.atlassian.com/platform/forge/getting-started/#log-in-with-an-atlassian-api-token"
-  		}
-  	}
+    "FORGE_EMAIL": {
+      "description": "Login email address of the Forge user.",
+      "documentationUrl": "https://developer.atlassian.com/platform/forge/getting-started/#using-environment-variables-to-login"
+    },
+    "FORGE_API_TOKEN": {
+      "description": "Account API token created at https://id.atlassian.com/manage/api-tokens",
+      "documentationUrl": "https://developer.atlassian.com/platform/forge/getting-started/#log-in-with-an-atlassian-api-token"
+    }
+  },
+  "postCreateCommand": "npm i -g @forge/cli && forge --version"
 }
