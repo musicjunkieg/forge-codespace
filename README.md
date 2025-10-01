@@ -23,6 +23,16 @@ In the terminal (already open in your Codespace):
 ```bash
 forge --version
 forge login --email "$FORGE_EMAIL" --token "$FORGE_API_TOKEN"
+```
+
+**Note:** The `forge login` command may display an error message like this, but it actually worked:
+```
+✕ Logging you in...
+
+Error: The CLI couldn't securely store your login credentials in a local keychain. Ensure you have libsecret installed. If a local keychain is not available, use environment variables before trying again. See https://go.atlassian.com/dac/platform/forge/getting-started/#log-in-with-an-atlassian-api-token for more.
+```
+
+```bash
 forge whoami
 ```
 
