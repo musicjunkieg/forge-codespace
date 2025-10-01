@@ -3,23 +3,36 @@
 Welcome! This repo is preconfigured with a Dev Container for Atlassian Forge development. No local installs required—just launch a Codespace and start building.
 
 ## Prerequisites (2 minutes)
+- Free GitHub account.
 - Atlassian account.
 - An API token from https://id.atlassian.com/manage/api-tokens.
 - Your Atlassian login email.
 
 ## Start (2–5 minutes)
-1. Open this repo on GitHub.
-2. Click the green **Code** button → Switch to **Codespaces** tab → Click **three dots "..."** → Select **New with options..***.
-3. When prompted, set Codespaces Secrets:
+1. Log in to your GitHub account.
+2. Open this repo on GitHub.
+3. Click the green **Code** button → Switch to **Codespaces** tab → Click **three dots "..."** → Select **New with options...**.
+4. In the Codespace creation UI, enter the Codespace Secrets:
    - **FORGE_EMAIL** = your Atlassian login email
    - **FORGE_API_TOKEN** = your Atlassian API token
-4. Wait for setup to complete. The container installs the Forge CLI automatically.
+5. Select the **Create codespace** button.
+6. Wait for setup to complete. The container installs the Forge CLI automatically.
 
 ## Verify and Log In
 In the terminal (already open in your Codespace):
 ```bash
 forge --version
 forge login --email "$FORGE_EMAIL" --token "$FORGE_API_TOKEN"
+```
+
+**Note:** The `forge login` command may display an error message like this, but it actually worked:
+```
+✕ Logging you in...
+
+Error: The CLI couldn't securely store your login credentials in a local keychain. Ensure you have libsecret installed. If a local keychain is not available, use environment variables before trying again. See https://go.atlassian.com/dac/platform/forge/getting-started/#log-in-with-an-atlassian-api-token for more.
+```
+
+```bash
 forge whoami
 ```
 
